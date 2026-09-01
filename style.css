@@ -222,3 +222,13 @@ footer {
     display: block;
   }
 }
+
+/* CSS-only mobile menu hack */
+.nav-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-toggle:checked ~ .nav-links {
+    display: flex !important;
+  }
+}

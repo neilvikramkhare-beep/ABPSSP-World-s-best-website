@@ -17,7 +17,8 @@
             <div class="logo">
                 <h1>ABPSSP</h1>
             </div>
-            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/about.html">About</a></li>
@@ -26,7 +27,7 @@
                 <li><a href="../pages/news.html">News</a></li>
                 <li><a href="../pages/membership.html">Membership</a></li>
                 <li><a href="../pages/contact.html">Contact</a></li>
-                <li><a href="../pages/login.html">Login</a></li>
+                <li><a href="../pages/login.html" style="color: var(--accent);">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -35,16 +36,16 @@
         <main class="container" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
             <div class="card" style="width: 100%; max-width: 400px;">
                 <h2 style="color: var(--primary); margin-bottom: 1.5rem; text-align: center;">Member Login</h2>
-                <form action="#" method="POST">
+                <form action="/submit_login" method="post">
                     <div class="form-group">
                         <label>Membership ID / Email</label>
-                        <input type="text" required>
+                        <input type="text" name="identifier" required>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" required>
+                        <input type="password" name="password" required>
                     </div>
-                    <button class="btn" style="width: 100%; border: none; cursor: pointer; margin-top: 1rem;">Login</button>
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; margin-top: 1rem;">Login</button>
                     <div style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">
                         <a href="#" style="color: var(--secondary);">Forgot Password?</a>
                     </div>
@@ -81,6 +82,5 @@
             <p>&copy; 2026 ABPSSP. All rights reserved. Designed for the Ex-Servicemen of the Indian Armed Forces.</p>
         </div>
     </footer>
-    <script src="../script.js"></script>
-</body>
+    </body>
 </html>

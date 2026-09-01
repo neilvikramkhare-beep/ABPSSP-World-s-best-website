@@ -17,14 +17,15 @@
             <div class="logo">
                 <h1>ABPSSP</h1>
             </div>
-            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/about.html">About</a></li>
                 <li><a href="../pages/organisation.html">Organisation</a></li>
                 <li><a href="../pages/programs.html">Programs</a></li>
                 <li><a href="../pages/news.html">News</a></li>
-                <li><a href="../pages/membership.html">Membership</a></li>
+                <li><a href="../pages/membership.html" style="color: var(--accent);">Membership</a></li>
                 <li><a href="../pages/contact.html">Contact</a></li>
                 <li><a href="../pages/login.html">Login</a></li>
             </ul>
@@ -37,22 +38,22 @@
             <p style="margin-bottom: 2rem;">All honorably discharged personnel of the Indian Armed Forces are eligible to join.</p>
             
             <div class="card">
-                <form action="#" method="POST">
+                <form action="/submit_membership" method="post">
                     <div class="form-group">
                         <label for="name">Full Name (As per Service Record)</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="service_no">Service Number</label>
-                        <input type="text" id="service_no" required>
+                        <input type="text" id="service_no" name="service_no" required>
                     </div>
                     <div class="form-group">
                         <label for="rank">Rank at Retirement</label>
-                        <input type="text" id="rank" required>
+                        <input type="text" id="rank" name="rank" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; margin-top: 1rem;">Submit Application</button>
                 </form>
@@ -88,6 +89,5 @@
             <p>&copy; 2026 ABPSSP. All rights reserved. Designed for the Ex-Servicemen of the Indian Armed Forces.</p>
         </div>
     </footer>
-    <script src="../script.js"></script>
-</body>
+    </body>
 </html>
